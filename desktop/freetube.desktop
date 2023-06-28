@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=FreeTube
+Exec=proot-distro login debian --user {{USERNAME}} --shared-tmp -- env DISPLAY=:1.0 /opt/FreeTube/freetube %U --no-sandbox
+Terminal=false
+Type=Application
+Icon=freetube
+StartupWMClass=FreeTube
+Comment=A private YouTube client
+MimeType=x-scheme-handler/freetube;
+Categories=Network;

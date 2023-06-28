@@ -14,13 +14,13 @@ This is is how I personally use Termux on my Galaxy Fold 3, script was created m
 During install you will recieve a popup to allow installs from termux, this will open the APK for the Termux-X11 android app. While you do not have to allow installs from termux, you will still need to install manually by using a file browser and finding the APK in your downloads folder. 
   
 
-After install you will need to exit termux using the command ```exit```
+After install you will need to exit termux using the command `exit`
   
-Once you restart termux you can use the command ```start``` 
+Once you restart termux you can use the command `start`
   
 This will start the termux-x11 server, XFCE4 desktop and open the Termux-X11 app right into the desktop. 
 
-To enter the Debian proot install from terminal use the command ```debian```
+To enter the Debian proot install from terminal use the command `debian`
 
 Also note, you do not need to set display in Debian proot as it is already set. This means you can use the terminal to start any GUI application and it will startup.
 
@@ -49,16 +49,8 @@ This script will shut down your session, you will have to manually close the And
 
 To install run this command in termux
 
-```
-termux-change-repo && curl -sL https://raw.githubusercontent.com/rafiazman/Termux_XFCE/develop/setup2.sh | bash
-```
-
-&nbsp;
-
-There is also a lite version without all the extra apps
-
-```
-curl -sL https://raw.githubusercontent.com/rafiazman/Termux_XFCE/main/setup_lite.sh | bash
+```sh
+termux-setup-storage && curl -sL http://192.168.1.238:5500/setup.sh | bash
 ```
 
 &nbsp;

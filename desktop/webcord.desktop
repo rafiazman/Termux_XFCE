@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Discord
+Comment=A Discord and Fosscord client made with the Electron API.
+GenericName=Internet Messenger
+Exec=proot-distro login debian --user {{USERNAME}} --shared-tmp -- env DISPLAY=:1.0 webcord --no-sandbox
+Icon=discord
+Type=Application
+StartupNotify=true
+Categories=Network;InstantMessaging;

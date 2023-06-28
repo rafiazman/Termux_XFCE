@@ -1,0 +1,7 @@
+#!/bin/bash
+# Script to open the Termux-X11 application & start an XFCE4 session
+export DISPLAY=:0
+
+termux-x11 :0 &
+am start --user 0 -n com.termux.x11/com.termux.x11.MainActivity
+proot-distro login debian --shared-tmp -- dbus-launch --exit-with-session startxfce4 &

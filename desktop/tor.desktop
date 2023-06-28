@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=Application
+Name=Tor Browser
+GenericName=Web Browser
+Comment=Tor Browser  is +1 for privacy and −1 for mass surveillance
+Categories=Network;WebBrowser;Security;
+Exec=proot-distro login debian --user {{USERNAME}} --shared-tmp -- env DISPLAY=:1.0 tor-browser/Browser/start-tor-browser
+X-TorBrowser-ExecShell=./Browser/start-tor-browser --detach
+Icon=tor
+StartupWMClass=Tor Browser
+Path=
+Terminal=false
+StartupNotify=false
